@@ -1,6 +1,6 @@
 public class ArraysMethods {
     public static void main(String[] args) {
-        int[] testArray = {5,1, 4, 3, 2};
+        int[] testArray = {7,1, 4, 3, 2};
         System.out.println("The min value in array is = " + minValue(testArray));
         System.out.println("The max value in array is = " + maxValue(testArray));
         System.out.println("The average Value in array is = " + avgValue(testArray));
@@ -32,13 +32,13 @@ public class ArraysMethods {
     }
 
     public static double avgValue(int... array) {
-        int sum = 0;
+        double sum = 0;
         int count = 0;
         for (int value : array) {
             sum += value;
             count++;
         }
-        return (sum / count);
+        return  (sum / count);
     }
 
     public static int[] arraySelectionSort(int... array) {
