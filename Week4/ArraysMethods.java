@@ -42,7 +42,6 @@ public class ArraysMethods {
     }
 
     public static int[] arraySelectionSort(int... array) {
-        int temp = 0;
         int[] sorted = array.clone();
         for (int i = 0; i < sorted.length-1; i++) {
             //Find the minimum value in the sorted array
@@ -88,6 +87,6 @@ public class ArraysMethods {
         }
 
         // in case the key is not found in the given array, return -1
-        return -low - 1;
+        return  -1;
     }
 }
