@@ -1,3 +1,5 @@
+package Week4;
+
 public class ArraysMethods {
     public static void main(String[] args) {
         int[] testArray = {7,1, 4, 3, 2};
@@ -63,7 +65,7 @@ public class ArraysMethods {
         return sorted;
     }
 
-    public static int binaraySearchArray(int key, int... array) {
+    public static int binarySearchArray(int key, int... array) {
         // To insure the array is sorted, using user defined function
         int[] sortedArray = arraySelectionSort(array);
         // Defining low and high base index, also working as pointers

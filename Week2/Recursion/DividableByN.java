@@ -7,6 +7,7 @@ public class DividableByN {
         int y=  sumOfDivideByN(100,7);
         System.out.println("x = " + x);
         System.out.println("y = " + y);
+
     }
 
     public static int sumOfDivideByN(int number,int divider) {
