@@ -11,7 +11,7 @@ public class ArraysMethods {
             System.out.print(","+i);
         }
         System.out.print("}"+"\n");
-        int findKeyIndex=binaraySearchArray(5, testArray);
+        int findKeyIndex=binarySearchArray(5, testArray);
         String searchResult= findKeyIndex<0?"Key value not found":"The key is on index\t"+findKeyIndex;
         System.out.println("Search result:" + searchResult);
 
