@@ -1,3 +1,4 @@
+package Week2.Recursion;
 
 public class DividableByN {
      static int sum=0;

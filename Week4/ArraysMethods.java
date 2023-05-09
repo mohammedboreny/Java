@@ -1,4 +1,3 @@
-package Week4;
 
 public class ArraysMethods {
     public static void main(String[] args) {
