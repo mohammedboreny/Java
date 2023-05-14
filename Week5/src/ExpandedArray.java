@@ -1,9 +1,6 @@
 package Week5.src;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Function;
@@ -196,12 +193,18 @@ public class ExpandedArray<T> {
      *     to flatten mapTemp[i][j],
      *
      */
-    public <U> ExpandedArray<T> flatMap(Function<? super T, ? extends Stream<? extends U>> mapper) {
-        ExpandedArray y = new ExpandedArray(lastIndex);
-        ExpandedArray<? extends Stream<? extends U>> mapTemp = map(t -> mapper.apply(t));
-        mapTemp.forEach(stream -> y.addElement(stream.toList()));
-        return y;
+
+    public  ExpandedArray<T> addAll(ExpandedArray<T> listToBeIncluded){
+        listToBeIncluded.forEach(a->addElement(a));
+        return this;
     }
+    public  <U>  ExpandedArray<U> flatMap(Function<T,ExpandedArray<U>> mapper) {
+        return reduceL(
+                new ExpandedArray<U>(),
+                acc->e-> acc.addAll(mapper.apply(e)));
+    }
+
+
 
 
 

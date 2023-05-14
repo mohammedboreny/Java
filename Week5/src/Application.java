@@ -16,9 +16,9 @@ public class Application {
                 Student.of("RUBA", 22, Gender.FEMALE, true, Course.MATH, Course.PHYSICS)
 
         };
+
 //         Stream.of(students).
-        ExpandedArray<Student> studentExpandedArray = ExpandedArray.of(students).flatMap(s -> Stream.of(s.getCourse()));
-        System.out.println(studentExpandedArray);
+//        ?System.out.println(studentExpandedArray);
 //        List<Student> studentsToList = toList(students);
 //        System.out.println(studentsToList);
 //        System.out.println("//Students -> List<Integer> using streams");
