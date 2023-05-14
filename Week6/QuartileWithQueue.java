@@ -15,10 +15,10 @@ public class QuartileWithQueue {
      * This is a demonstration on PriorityQueue to solve a problem where a list of values is given
      * without being ordered.
      * The idea process:
-     * -Create two PriorityQueue (higher and lower).
-     * 1-let higher queue fill in descending order, higher.peek() would be the lower value in the queue
-     * 2-let lower queue fill in ascending order(reversed), lower.peek() would be the higher value in the queue.
-     * 3-loop over the given array then:
+     * 1-Create two PriorityQueue (higher and lower).
+     * 2-let higher queue fill in descending order, higher.peek() would be the lower value in the queue
+     * 3-let lower queue fill in ascending order(reversed), lower.peek() would be the higher value in the queue.
+     * 4-loop over the given array then:
      *   -keep adding values to higher priority on every iteration.
      *   -if the higher.size>2, poll from higher and add it to lower queue.
      */
