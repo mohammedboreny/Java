@@ -5,10 +5,10 @@ import java.util.function.Predicate;
 public class ParenthesesCheck {
 
         public static void main(String[] args) {
-            Scanner s=new Scanner(System.in);
-            String string=s.nextLine();
-            boolean check=isValid(string);
-            System.out.println(check?string+"\tIs Valid String":string+"\tIs not valid String");
+//            Scanner s=new Scanner(System.in);
+//            String string=s.nextLine();
+            boolean check=isValid("(())");
+            System.out.println(check?"\tIs Valid String":"\tIs not valid String");
         }
 
      /***
@@ -39,6 +39,10 @@ public class ParenthesesCheck {
                 x.pop();
                 x.pop();
             }
+            else if (x.peek()==')'&x.size()==1) {
+                return false;
+            }
+
             System.out.println(x);
         }
         return x.size()==0;
